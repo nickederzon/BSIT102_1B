@@ -1,7 +1,5 @@
 name =input("Enter your name ---> ")
-print("+++++++++++++++++++++++ \n")
 print("ODD NUMBER SUMMATION, press 0 to stop")
-print("+++++++++++++++++++++++ \n")
 
 nick = True
 sum = 0
