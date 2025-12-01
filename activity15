@@ -1,0 +1,19 @@
+print("STRING FORMATION")
+print("STRING CONCATENATION")
+print("USING f{} METHOD")
+name = input("what is your name ---->")
+name1 = input("what is your middle name ---> ")
+name2 = input("what is your surname ---> ")
+print(f"your full name is {name} {name1} {name2}\n")
+print("using f{"".upper} method")
+print(f"ny full name is {name.upper} {name1.upper} {name2.upper}\n")
+
+all = 0
+for lol in range(1, 6):
+    oll = eval(input(f"{lol}-input a number ---> "))
+    all += oll
+print(f"the total sum if{all}\n")
+print("top 5 list of your favorite movie")
+for nick in range(5, 1, -1):
+    nick = input(f"top{nick} favorite movie ---> ")
+print("thank you for listing top 5 of your favorite movie")
