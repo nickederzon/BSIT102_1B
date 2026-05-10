@@ -1,0 +1,48 @@
+while True:
+	print ("~~~~DREAMS FILE MANAGER~~~~\n")
+	print ( "1. Read Inspiring Messages")
+	print ( "2. Add a New Inspiring Messages")
+	print ( "3. Rewrite the Entire File")
+	print (" 4. Exit")
+	
+	nick = input("Enter your choice : ")
+	
+	if nick == "1":
+		file = open("dreams.txt", "r")
+		content = file.read()
+		
+		print ("~~Inspiring Messages~~~\n")
+		print (content)
+		
+		file.close()
+		
+	elif nick == "2":
+			
+			message = input("New Inspiring messages \n")
+			file = open("dreams.txt", "a")
+			file.write (message +"\n")
+			
+			file.close()
+			
+			print("Message added successfully!")
+			
+	elif nick == "3":
+				
+				ni = input ("Type Yes to continue? (yes or no):")
+				if ni.lower() == "yes":
+					new_content = input ("Write your new inspiring messages :")
+					
+					file = open("dreams.txt", "w")
+					file.write(new_content + "\n")
+					
+					file.close()
+					
+					print ("file written successfully!")
+					
+				else:
+						print ("Rewrite cancelled.")
+						
+	elif nick == "4":
+							print ("exit program")
+							
+							break   
